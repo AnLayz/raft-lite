@@ -66,3 +66,11 @@ Each node maintains the following state:
 Install dependencies:
 ```bash
 pip install flask requests
+
+---
+
+
+python3 node.py --id A --port 8000 --peers 172.31.73.9:8001,172.31.77.238:8002
+python3 node.py --id B --port 8001 --peers 172.31.69.17:8000,172.31.77.238:8002
+python3 node.py --id C --port 8002 --peers 172.31.69.17:8000,172.31.73.9:8001
+
